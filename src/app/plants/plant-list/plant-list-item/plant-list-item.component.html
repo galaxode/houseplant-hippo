@@ -1,0 +1,14 @@
+<a
+  [routerLink]="[index]"
+  class="list-group-item clearfix">
+  <div class="col-xs-9">
+    <h4 class="list-group-item-heading">{{ plant.name }}</h4>
+    <h5 class="list-group-item-heading"
+        style="font-style: italic;"> {{ plant.scientificName }}
+    </h5>
+    <p class="list-group-item-text">{{ plant.description }}</p>
+  </div>
+  <span class="pull-right">
+      <img [src]="plant.imagePath" alt="{{ plant.name }}" class="img-responsive" style="max-height: 65px;">
+  </span>
+</a>
